@@ -44,7 +44,6 @@ let tl3 = gsap.timeline({
         start: "0% 95%",
         end: "45% 50%",
         scrub: 1,
-        markers: true,
     }
 })
 tl3.to("#iphone15", {
@@ -69,5 +68,6 @@ tl3.to("#apple-name", {
     fontSize: '16px',
     letterSpacing: '5px',
     zIndex: 2,
-    color: "#aaaaaa",
+    color: "#ababab",
 }, "heroToAbout");
+

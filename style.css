@@ -32,13 +32,23 @@ a{
 }
 
 /* Common Styles here */
+.title{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+.title span{
+    color: #4b4b4b;
+}
+
+/* Navigation Styles here */
 #navigation nav{
     width: 100%;
     margin: 0 auto;
     width: var(--primary-width);
 }
 
-/* Navigation Styles here */
 #navigation{
     padding: 15px 0;
     position: fixed;
@@ -55,15 +65,15 @@ a{
 #navigation nav #brand-logo a{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 2px;
 }
 #navigation nav #brand-logo img{
     width: 23px;
+    margin-top: -7px;
 }
 #navigation nav #brand-logo p{
     font-size: 17px;
     font-weight: 600;
-    margin-top: 6px;
 }
 
 #navigation nav ul{
@@ -167,7 +177,68 @@ a{
     color: var(--primary-color);
     cursor: pointer;
 }
+
+/* Top Phones Styles here */
 #top-phones{
+    background: linear-gradient(100deg, #e4e4e4, #c0bebec4);
     width: 100%;
-    height: 100vh;
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    flex-direction: column;
+}
+#top-phones-container{
+    width: 100%;
+    max-width: var(--primary-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+#top-phones-container .card{
+    position: relative;
+    height: 460px;
+    width: 100%;
+    background-color: rgb(242, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px 0px #cac9c9;
+}
+#top-phones-container .card img{
+    position: absolute;
+    width: 100%;
+}
+#iphone13{
+    width: 128% !important;
+    bottom: 15%;
+}
+#iphone14{
+    width: 62% !important;
+    bottom: 19%;
+}
+
+#top-phones-container .card button{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid var(--primary-color);
+    padding: 8px 25px;
+    padding-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 33px;
+    box-shadow: 0 1px 10px 0px #cac9c9;
+    transition: .2s ease-in-out;
+}
+#top-phones-container .card button:hover{
+    background-color: var(--dark-background);
+    color: var(--dark-color);
+    font-weight: 500;
 }
