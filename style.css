@@ -13,6 +13,19 @@
     --dark-background: #181818;
     --dark-color: #e4e4e4;
 }
+body::-webkit-scrollbar {
+    width: 7px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: var(--dark-color);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+  }
 
 a{
     text-decoration: none;
@@ -32,6 +45,7 @@ a{
     top: 0;
     width: 100%;
     z-index: 99;
+    transition: .2s ease-in-out;
 }
 #navigation nav{
     display: flex;
@@ -49,7 +63,6 @@ a{
 #navigation nav #brand-logo p{
     font-size: 17px;
     font-weight: 600;
-    color: var(--primary-color);
     margin-top: 6px;
 }
 
@@ -61,7 +74,6 @@ a{
 #navigation nav ul li{
     font-size: 16px;
     font-weight: 500;
-
 }
 
 /* Main Styles */
@@ -102,5 +114,9 @@ a{
 #about{
     width: 100%;
     height: 100vh;
-    
+    background: var(--dark-background);
+}
+#top-phones{
+    width: 100%;
+    height: 100vh;
 }
