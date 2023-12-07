@@ -7,10 +7,11 @@ const allColors = {
 // Navbar color change when about section start
 let tl = gsap.timeline({
     scrollTrigger: {
-        trigger: "#about",
-        start: "top 30px",
+        trigger: "#hero",
+        start: "100% 30px",
         end: "top 30px",
         scrub: 1,
+        markers: true,
     }
 })
 tl.to(".menu-items", {
@@ -35,3 +36,6 @@ tl2.to(".menu-items", {
 tl2.to("#brand-logo-name", {
     color: 'black'
 })
+
+
+// Iphone scroll animation from hero section to about section
