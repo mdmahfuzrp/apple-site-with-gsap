@@ -71,3 +71,23 @@ tl3.to("#apple-name", {
     color: "#ababab",
 }, "heroToAbout");
 
+let tl4 = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#top-phones",
+        start: "0% 95%",
+        end: "40% 50%",
+        scrub: 1,
+    }
+})
+tl4.to("#iphone15", {
+    top: '215%',
+    left: '33%',
+    width: '34%'
+}, 'top-phones')
+tl4.to("#iphone13", {
+    rotate: '0',
+}, 'top-phones')
+
+tl4.to("#iphone14", {
+    rotate: '0',
+}, 'top-phones')

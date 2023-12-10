@@ -218,10 +218,12 @@ a{
 #iphone13{
     width: 128% !important;
     bottom: 15%;
+    transform: rotate(-35deg);
 }
 #iphone14{
     width: 62% !important;
     bottom: 19%;
+    transform: rotate(35deg);
 }
 
 #top-phones-container .card button{
@@ -241,4 +243,19 @@ a{
     background-color: var(--dark-background);
     color: var(--dark-color);
     font-weight: 500;
+}
+
+footer{
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--dark-background);
+}
+footer p{
+    color: gray;
+    text-align: center;
+}
+footer p a{
+    color: rgb(70, 70, 204);
+    text-decoration: underline;
 }
